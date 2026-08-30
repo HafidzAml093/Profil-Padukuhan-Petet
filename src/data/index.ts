@@ -136,3 +136,220 @@ export const jelajahi = [
     icon: ShoppingBag,
   },
 ];
+
+// src/data/index.ts
+
+export const umkmGeoJSON = {
+  type: "FeatureCollection",
+  features: [
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1552285, -7.669961, 0] },
+      properties: {
+        name: "NURYADI BAMBU",
+        "icon-color": "#1a237e",
+        deskripsi: "kerajinan bambu",
+        "Jenis UMKM": "KERAJINAN",
+        Kontak: "083821995681",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.154866, -7.6702548, 0] },
+      properties: {
+        name: "MITRO TEMPE",
+        "icon-color": "#0288d1",
+        deskripsi: "pembuatan tempe",
+        "Jenis UMKM": "PRODUKSI TEMPE",
+        Kontak: "083156986891",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1554095, -7.6713334, 0] },
+      properties: {
+        name: "Jemu Tempe",
+        "icon-color": "#0288d1",
+        deskripsi: "Produksi Tempe Kedelai",
+        "Jenis UMKM": "PRODUKSI TEMPE",
+        Kontak: "083853223954",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.154916, -7.6701255, 0] },
+      properties: {
+        name: "IZZA TAYLOR",
+        "icon-color": "#f57c00",
+        deskripsi: "PENJAHIT",
+        "Jenis UMKM": "JASA",
+        Kontak: "083147851411",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1554332, -7.6707583, 0] },
+      properties: {
+        name: "Rumah simbah Leginem",
+        "icon-color": "#0f9d58",
+        deskripsi: "Krupuk singkong(krecek)",
+        "Jenis UMKM": "TOKO",
+        Kontak: "087733206034",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1554077, -7.6711094, 0] },
+      properties: {
+        name: "Warung mbak Midah",
+        "icon-color": "#0f9d58",
+        deskripsi: "Warung klontong",
+        "Jenis UMKM": "TOKO",
+        Kontak: "",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1508609, -7.6703066, 0] },
+      properties: {
+        name: "SENIYAH TEMPE",
+        "icon-color": "#0288d1",
+        deskripsi: "PEMBUATAN TEMPE",
+        "Jenis UMKM": "PRODUKSI TEMPE",
+        Kontak: "083839551576",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.15522, -7.6706909, 0] },
+      properties: {
+        name: "Dul Pete",
+        "icon-color": "#e65100",
+        deskripsi: "Jual beli petai",
+        "Jenis UMKM": "PERTANIAN",
+        Kontak: "083159571170",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1524122, -7.6725079, 0] },
+      properties: {
+        name: "SIMANIS GENDIS JAWA",
+        "icon-color": "#fbc02d",
+        deskripsi: "PRODUKSI GULA AREN",
+        "Jenis UMKM": "GULA AREN",
+        Kontak: "085729590466",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1541951, -7.67297, 0] },
+      properties: {
+        name: "GITO GATI FARM",
+        "icon-color": "#c2185b",
+        deskripsi: "pengembangbiakan kambing etawa",
+        "Jenis UMKM": "PETERNAKAN",
+        Kontak: "087839695500",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1552244, -7.6714976, 0] },
+      properties: {
+        name: "Rumah bapak Siswo Sutrisno",
+        "icon-color": "#f57c00",
+        deskripsi: "Jasa pembuatan kusen dan pintu",
+        "Jenis UMKM": "JASA",
+        Kontak: "0859166235243",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1574645, -7.6748453, 0] },
+      properties: {
+        name: "GULA AREN RUKIMIN",
+        "icon-color": "#fbc02d",
+        deskripsi: "INDUSTRI PEMBUATAN GULA AREN",
+        "Jenis UMKM": "GULA AREN",
+        Kontak: "083111702350",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1552232, -7.6744067, 0] },
+      properties: {
+        name: "GEBLEK MAS TOYO",
+        "icon-color": "#3949ab",
+        deskripsi: "PEMBUATAN GEBLEK",
+        "Jenis UMKM": "PRODUKSI GEBLEK",
+        Kontak: "085740982218",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1554391, -7.6708845, 0] },
+      properties: {
+        name: "Rumah bapak Sukiman",
+        "icon-color": "#f57c00",
+        deskripsi: "Jasa Pertukangan",
+        "Jenis UMKM": "JASA",
+        Kontak: "087733206034",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1558987, -7.6701609, 0] },
+      properties: {
+        name: "Rumah Rohmatul",
+        "icon-color": "#e65100",
+        deskripsi: "Jual beli petai",
+        "Jenis UMKM": "PERTANIAN",
+        Kontak: "08174118060",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1522888, -7.6722893, 0] },
+      properties: {
+        name: "BENGKEL MORO DADI",
+        "icon-color": "#f57c00",
+        deskripsi: "BENGKEL MOTOR",
+        "Jenis UMKM": "JASA",
+        Kontak: "",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1534983, -7.6765938, 0] },
+      properties: {
+        name: "BONIRAH",
+        "icon-color": "#e65100",
+        deskripsi: "JUAL BELI HASIL. PERTANIAN",
+        "Jenis UMKM": "PERTANIAN",
+        Kontak: "",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1537025, -7.6706442, 0] },
+      properties: {
+        name: "Rumah Jumari",
+        "icon-color": "#c2185b",
+        deskripsi: "Ternak ayam kampung",
+        "Jenis UMKM": "PETERNAKAN",
+        Kontak: "083877377493",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [110.1541127, -7.6701962, 0] },
+      properties: {
+        name: "Rumah bpk Khusnul Anwari",
+        "icon-color": "#0f9d58",
+        deskripsi: "Penyediaan Pulsa dan token listrik",
+        "Jenis UMKM": "TOKO",
+        Kontak: "082137727937",
+      },
+    },
+  ],
+};
