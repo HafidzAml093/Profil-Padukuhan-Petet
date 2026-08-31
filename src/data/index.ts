@@ -7,6 +7,9 @@ import {
   Music,
   Mountain,
   ShoppingBag,
+  Heart,
+  Tractor,
+  Sprout,
 } from "lucide-react";
 
 export const identitasDesa = [
@@ -67,27 +70,6 @@ export const agendaKegiatan = [
     date: "10 NOV",
     title: "Gotong Royong Bersih Desa",
     desc: "Kegiatan rutin membersihkan lingkungan dan fasilitas umum.",
-  },
-];
-
-export const beritaDesa = [
-  {
-    date: "12 Jul 2024",
-    category: "Pembangunan",
-    title: "Peresmian Balai Warga Baru",
-    desc: "Fasilitas baru untuk mendukung kegiatan komunitas dan pertemuan rutin desa.",
-  },
-  {
-    date: "05 Jun 2024",
-    category: "Penghargaan",
-    title: "Juara 1 Desa Wisata Terbersih",
-    desc: "Desa Petet kembali meraih penghargaan tingkat kabupaten dalam kebersihan lingkungan.",
-  },
-  {
-    date: "28 Mei 2024",
-    category: "Program Desa",
-    title: "Bantuan Bibit Tanaman Obat",
-    desc: "Pemerintah desa membagikan bibit Toga kepada setiap rumah tangga untuk kemandirian kesehatan.",
   },
 ];
 
@@ -353,3 +335,46 @@ export const umkmGeoJSON = {
     },
   ],
 };
+
+export const komunitasDesa = [
+  {
+    nama: "Karang Taruna",
+    deskripsi:
+      "Wadah pemuda-pemudi Padukuhan Petet untuk berkreasi, berinovasi, dan berkegiatan sosial di lingkungan masyarakat.",
+    icon: Users,
+    color: "text-blue-600",
+    bg: "bg-blue-100",
+  },
+  {
+    nama: "PKK",
+    deskripsi:
+      "Pemberdayaan Kesejahteraan Keluarga yang menjadi penggerak wanita dalam pembangunan dan kesejahteraan keluarga.",
+    icon: Heart,
+    color: "text-pink-600",
+    bg: "bg-pink-100",
+  },
+  {
+    nama: "Kelompok Ternak Karya Mandiri",
+    deskripsi:
+      "Komunitas peternak yang berfokus pada pengembangbiakan, perawatan, dan pengelolaan hasil ternak secara mandiri.",
+    icon: Tractor,
+    color: "text-amber-600",
+    bg: "bg-amber-100",
+  },
+  {
+    nama: "Kelompok Tani Sido Maju",
+    deskripsi:
+      "Paguyuban petani Padukuhan Petet yang saling bersinergi untuk memajukan hasil pertanian dan kesejahteraan anggota.",
+    icon: Leaf,
+    color: "text-green-600",
+    bg: "bg-green-100",
+  },
+  {
+    nama: "KWT Tunas Asri",
+    deskripsi:
+      "Kelompok Wanita Tani yang aktif bergerak dalam pemanfaatan pekarangan dan pengembangan potensi hasil bumi rumahan.",
+    icon: Sprout,
+    color: "text-emerald-600",
+    bg: "bg-emerald-100",
+  },
+];

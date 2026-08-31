@@ -30,7 +30,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-sm text-gray-500">
-            © 2024 Desa Petet. Preserving Heritage, Empowering Future.
+            © 2026 Padukuhan Petet. Preserving Heritage, Empowering Future.
           </div>
         </div>
       </div>

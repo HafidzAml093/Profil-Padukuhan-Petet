@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-[#F7F7F2]/90 backdrop-blur-md border-b border-gray-200">
@@ -9,18 +10,27 @@ export default function Navbar() {
             </span>
           </div>
           <div className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-600 hover:text-[#1e3b2b]">
+            <Link href="#" className="text-gray-600 hover:text-[#1e3b2b]">
               History
-            </a>
-            <a href="#" className="text-gray-600 hover:text-[#1e3b2b]">
+            </Link>
+            <Link href="#" className="text-gray-600 hover:text-[#1e3b2b]">
               Culture
-            </a>
-            <a href="#" className="text-gray-600 hover:text-[#1e3b2b]">
+            </Link>
+            <Link href="#" className="text-gray-600 hover:text-[#1e3b2b]">
               UMKM
-            </a>
-            <a href="#" className="text-gray-600 hover:text-[#1e3b2b]">
+            </Link>
+            <Link
+              href="#peta-umkm"
+              className="text-gray-600 hover:text-[#1e3b2b]"
+            >
               Map
-            </a>
+            </Link>
+            <Link
+              href="#komunitas"
+              className="text-gray-600 hover:text-[#1e3b2b]"
+            >
+              Komunitas
+            </Link>
           </div>
           <div>
             <button className="bg-[#1e3b2b] text-white px-6 py-2 rounded-full hover:bg-[#2c533e] transition">

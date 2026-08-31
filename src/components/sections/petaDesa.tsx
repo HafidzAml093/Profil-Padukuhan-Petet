@@ -14,7 +14,7 @@ const MapWithNoSSR = dynamic(() => import("./MapClient"), {
 
 export default function PetaDesa() {
   return (
-    <section className="py-16 bg-[#F7F7F2]">
+    <section id="peta-umkm" className="py-16 bg-[#F7F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-[#1e3b2b]">
