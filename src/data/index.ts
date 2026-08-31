@@ -10,6 +10,9 @@ import {
   Heart,
   Tractor,
   Sprout,
+  Utensils,
+  Scissors,
+  Coffee,
 } from "lucide-react";
 
 export const identitasDesa = [
@@ -96,26 +99,62 @@ export const komunitas = [
   },
 ];
 
-export const jelajahi = [
+export const dataJendelaUMKM = [
   {
-    name: "Situs Budaya",
-    desc: "Jejak sejarah peninggalan leluhur.",
-    icon: Home,
+    id: "gula-aren",
+    name: "Gula Aren Bpk. Rukimin",
+    category: "Produksi Gula Aren",
+    shortDesc: "100% murni tanpa pengawet buatan.",
+    icon: Coffee,
+    fullTitle: "Gula Aren Alami Bapak Rukimin",
+    fullDesc:
+      "Kemurnian dari Padukuhan Petet. Gula aren tradisional yang diolah 100% secara manual tanpa campuran bahan kimia. Memiliki warna alami kecokelatan dengan tekstur empuk dan aroma karamel yang mendalam hasil dari pemanasan tungku kayu bakar.",
+    location: "Padukuhan Petet RT 20, Kapanewon Samigaluh, Kulon Progo",
+    hours: "Senin - Sabtu (Buka setiap hari pasaran)",
+    contact: "Bapak Rukimin (Bisa via WhatsApp)",
+    price: "Gula Aren Cetak: Rp 25.000 / kilogram (Kapasitas maks 2kg/hari)",
   },
   {
-    name: "Seni Tradisional",
-    desc: "Pertunjukan tari dan musik gamelan.",
-    icon: Music,
+    id: "geblek-toyo",
+    name: "Geblek Mas Toyo",
+    category: "Kuliner Tradisional",
+    shortDesc: "Cita rasa autentik sejak 1987.",
+    icon: Utensils,
+    fullTitle: "Geblek Mas Toyo: Autentik Sejak 1987",
+    fullDesc:
+      "Dirintis oleh Mbah Ngatiyem, usaha keluarga ini mempertahankan keaslian rasa menggunakan teknik khusus perpaduan ampas dan pati singkong lokal. Menghasilkan tekstur geblek yang renyah di luar, kenyal di dalam, dan tidak cepat keras meski disimpan.",
+    location: "Dusun Petet, Yogyakarta, Indonesia",
+    hours: "Tersedia Eceran & Partai Besar (Sistem Made to Order)",
+    contact: "WhatsApp Geblek Mas Toyo",
+    price: "Mulai dari Rp 1.000 / 3 buah",
   },
   {
-    name: "Wisata Alam",
-    desc: "Trekking sawah dan bukit hijau.",
-    icon: Mountain,
+    id: "nuryadi-craft",
+    name: "Nuryadi Craft",
+    category: "Kriya Bambu",
+    shortDesc: "Menjaga warisan, menganyam masa depan.",
+    icon: Scissors,
+    fullTitle: "Keunggulan Kriya Nuryadi",
+    fullDesc:
+      "Dedikasi puluhan tahun Mbah Nuryadi dalam melestarikan seni kriya bambu tradisional dengan ketelitian tangan murni (100% Handmade). Menghasilkan anyaman berkualitas turun-temurun yang adaptif dengan harga yang merakyat.",
+    location: "Padukuhan Petet, Kulon Progo",
+    hours: "Senin - Minggu",
+    contact: "Bapak Nuryadi (Pemesanan via WhatsApp)",
+    price: "Bervariasi tergantung jenis dan ukuran anyaman",
   },
   {
-    name: "Produk Lokal",
-    desc: "Oleh-oleh khas karya warga desa.",
+    id: "tempe-jemu",
+    name: "Jemu Tempe",
+    category: "Produksi Tempe",
+    shortDesc: "Tempe kedelai segar produksi lokal.",
     icon: ShoppingBag,
+    fullTitle: "Pusat Produksi Jemu Tempe Kedelai",
+    fullDesc:
+      "Memproduksi tempe kedelai berkualitas tinggi dengan proses fermentasi yang terjaga kebersihannya. Menjadi pemasok utama kebutuhan protein nabati harian bagi warga sekitar dan pasar lokal Padukuhan Petet.",
+    location: "Padukuhan Petet, Samigaluh",
+    hours: "Setiap Hari (Produksi Pagi Hari)",
+    contact: "0838-5322-3954",
+    price: "Harga grosir dan eceran menyesuaikan ukuran",
   },
 ];
 
