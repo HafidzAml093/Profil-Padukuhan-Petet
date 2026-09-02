@@ -2,17 +2,17 @@ import {
   Users,
   Briefcase,
   HeartHandshake,
-  Leaf,
+  PawPrint,
+  Wheat,
   Home,
-  Music,
   Mountain,
-  ShoppingBag,
-  Heart,
-  Tractor,
+  Candy,
   Sprout,
   Utensils,
   Scissors,
-  Coffee,
+  Package,
+  Leaf,
+  Music,
 } from "lucide-react";
 
 export const identitasDesa = [
@@ -105,7 +105,7 @@ export const dataJendelaUMKM = [
     name: "Gula Aren Bpk. Rukimin",
     category: "Produksi Gula Aren",
     shortDesc: "100% murni tanpa pengawet buatan.",
-    icon: Coffee,
+    icon: Candy,
     fullTitle: "Gula Aren Alami Bapak Rukimin",
     fullDesc:
       "Kemurnian dari Padukuhan Petet. Gula aren tradisional yang diolah 100% secara manual tanpa campuran bahan kimia. Memiliki warna alami kecokelatan dengan tekstur empuk dan aroma karamel yang mendalam hasil dari pemanasan tungku kayu bakar.",
@@ -113,6 +113,8 @@ export const dataJendelaUMKM = [
     hours: "Senin - Sabtu (Buka setiap hari pasaran)",
     contact: "Bapak Rukimin (Bisa via WhatsApp)",
     price: "Gula Aren Cetak: Rp 25.000 / kilogram (Kapasitas maks 2kg/hari)",
+    mainImage: "/images/umkm/gula-aren/main.jpg",
+    gallery: ["/images/umkm/gula-aren/1.jpg", "/images/umkm/gula-aren/2.jpg"],
   },
   {
     id: "geblek-toyo",
@@ -127,6 +129,8 @@ export const dataJendelaUMKM = [
     hours: "Tersedia Eceran & Partai Besar (Sistem Made to Order)",
     contact: "WhatsApp Geblek Mas Toyo",
     price: "Mulai dari Rp 1.000 / 3 buah",
+    mainImage: "/images/umkm/geblek/main.jpg",
+    gallery: ["/images/umkm/geblek/1.jpg", "/images/umkm/geblek/2.jpg"],
   },
   {
     id: "nuryadi-craft",
@@ -141,13 +145,15 @@ export const dataJendelaUMKM = [
     hours: "Senin - Minggu",
     contact: "Bapak Nuryadi (Pemesanan via WhatsApp)",
     price: "Bervariasi tergantung jenis dan ukuran anyaman",
+    mainImage: "/images/umkm/bambu/main.jpg",
+    gallery: ["/images/umkm/bambu/1.jpg", "/images/umkm/bambu/2.jpg"],
   },
   {
     id: "tempe-jemu",
     name: "Jemu Tempe",
     category: "Produksi Tempe",
     shortDesc: "Tempe kedelai segar produksi lokal.",
-    icon: ShoppingBag,
+    icon: Package,
     fullTitle: "Pusat Produksi Jemu Tempe Kedelai",
     fullDesc:
       "Memproduksi tempe kedelai berkualitas tinggi dengan proses fermentasi yang terjaga kebersihannya. Menjadi pemasok utama kebutuhan protein nabati harian bagi warga sekitar dan pasar lokal Padukuhan Petet.",
@@ -155,6 +161,8 @@ export const dataJendelaUMKM = [
     hours: "Setiap Hari (Produksi Pagi Hari)",
     contact: "0838-5322-3954",
     price: "Harga grosir dan eceran menyesuaikan ukuran",
+    mainImage: "/images/umkm/tempe/main.jpg",
+    gallery: ["/images/umkm/tempe/1.jpg", "/images/umkm/tempe/2.jpg"],
   },
 ];
 
@@ -381,39 +389,39 @@ export const komunitasDesa = [
     deskripsi:
       "Wadah pemuda-pemudi Padukuhan Petet untuk berkreasi, berinovasi, dan berkegiatan sosial di lingkungan masyarakat.",
     icon: Users,
-    color: "text-blue-600",
-    bg: "bg-blue-100",
+    color: "text-[#1e3b2b]",
+    bg: "bg-gray-200",
   },
   {
     nama: "PKK",
     deskripsi:
       "Pemberdayaan Kesejahteraan Keluarga yang menjadi penggerak wanita dalam pembangunan dan kesejahteraan keluarga.",
-    icon: Heart,
-    color: "text-pink-600",
-    bg: "bg-pink-100",
+    icon: HeartHandshake,
+    color: "text-[#1e3b2b]",
+    bg: "bg-gray-200",
   },
   {
     nama: "Kelompok Ternak Karya Mandiri",
     deskripsi:
       "Komunitas peternak yang berfokus pada pengembangbiakan, perawatan, dan pengelolaan hasil ternak secara mandiri.",
-    icon: Tractor,
-    color: "text-amber-600",
-    bg: "bg-amber-100",
+    icon: PawPrint,
+    color: "text-[#1e3b2b]",
+    bg: "bg-gray-200",
   },
   {
     nama: "Kelompok Tani Sido Maju",
     deskripsi:
       "Paguyuban petani Padukuhan Petet yang saling bersinergi untuk memajukan hasil pertanian dan kesejahteraan anggota.",
-    icon: Leaf,
-    color: "text-green-600",
-    bg: "bg-green-100",
+    icon: Wheat,
+    color: "text-[#1e3b2b]",
+    bg: "bg-gray-200",
   },
   {
     nama: "KWT Tunas Asri",
     deskripsi:
       "Kelompok Wanita Tani yang aktif bergerak dalam pemanfaatan pekarangan dan pengembangan potensi hasil bumi rumahan.",
     icon: Sprout,
-    color: "text-emerald-600",
-    bg: "bg-emerald-100",
+    color: "text-[#1e3b2b]",
+    bg: "bg-gray-200",
   },
 ];

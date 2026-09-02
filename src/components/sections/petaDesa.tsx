@@ -1,12 +1,12 @@
+// src/components/sections/petaDesa.tsx
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
 
-// Memuat MapClient secara dinamis, mematikan SSR (Server-Side Rendering)
 const MapWithNoSSR = dynamic(() => import("./MapClient"), {
   ssr: false,
   loading: () => (
-    <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
+    <div className="w-full h-[50vh] flex items-center justify-center bg-gray-200 text-gray-500 rounded-xl">
       Memuat Peta Desa...
     </div>
   ),
@@ -21,13 +21,13 @@ export default function PetaDesa() {
             Peta UMKM Padukuhan Petet
           </h2>
           <p className="text-gray-600 mt-2">
-            Geser dan perbesar peta untuk melihat lokasi detail serta informasi
-            kontak UMKM kami.
+            Klik ikon pada peta untuk melihat detail lokasi dan informasi kontak
+            UMKM.
           </p>
         </div>
 
-        {/* Kontainer Peta */}
-        <div className="relative w-full aspect-4/3 md:aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-2xl border border-gray-300 z-0">
+        {/* Kontainer Utama - Aspek rasio dihapus agar tidak memotong legenda */}
+        <div className="w-full">
           <MapWithNoSSR />
         </div>
       </div>

@@ -11,6 +11,7 @@ import KontakPengelola from "@/components/sections/kontakPengelola";
 import Footer from "@/components/layout/footer";
 import KomunitasSection from "@/components/sections/komunitasSection";
 import JelajahiDesa from "@/components/sections/jelajahiSection";
+import AgendaDesa from "@/components/sections/agendaKegiatanSection";
 export default function DesaProfile() {
   return (
     <div className="min-h-screen bg-[#F7F7F2] text-gray-800 font-sans">
@@ -29,13 +30,10 @@ export default function DesaProfile() {
       {/* 7. DEMOGRAFI & INFRASTRUKTUR */}
       <DemografiPetet />
       {/* 8. STATUS DESA MANDIRI BUDAYA */}
-
       {/* 9. KEHIDUPAN BUDAYA & AGENDA KEGIATAN */}
-
+      <AgendaDesa /> {/*Masih harus di fix*/}
       {/* 10. BERITA DESA */}
-
       {/* 11. GALERI DESA */}
-
       {/* 12. CERITA DARI DESA & KOMUNITAS */}
       <KomunitasSection />
       {/* 13. JELAJAHI DESA PETET (UMKM) */}
@@ -43,7 +41,6 @@ export default function DesaProfile() {
       {/* 14. PETA DESA */}
       <PetaDesa />
       {/* 15. SEBELUM BERKUNJUNG */}
-
       {/* 16. HUBUNGI PENGELOLA */}
       <KontakPengelola />
       {/* 17. FOOTER */}

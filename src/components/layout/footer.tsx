@@ -1,4 +1,26 @@
+import Link from "next/link";
+import { FaInstagram, FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
+
+const socials = [
+  {
+    href: "https://www.instagram.com/hafeedz_aml/#",
+    icon: FaInstagram,
+    label: "Instagram",
+  },
+  { href: "https://wa.me/62...", icon: FaWhatsapp, label: "WhatsApp" },
+  { href: "https://facebook.com/...", icon: FaFacebook, label: "Facebook" },
+  { href: "https://tiktok.com/...", icon: FaTiktok, label: "TikTok" },
+];
+
+const footerLinks = [
+  { href: "#", label: "Contact" },
+  { href: "#", label: "Privacy Policy" },
+  { href: "#", label: "Tourism Guide" },
+];
+
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-[#EFEFE6] py-12 px-4 border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
@@ -14,23 +36,41 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="flex justify-center gap-3 mb-10">
+          {socials.map((social) => {
+            const Icon = social.icon;
+            return (
+              <Link
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-gray-500 hover:bg-[#1e3b2b] hover:text-white transition-colors duration-300"
+              >
+                <Icon className="w-4 h-4" />
+              </Link>
+            );
+          })}
+        </div>
+
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-300 gap-4">
           <div className="font-serif text-xl font-bold text-[#1e3b2b]">
-            Desa Petet
+            Padukuhan Petet
           </div>
           <div className="flex gap-6 text-sm text-gray-500">
-            <a href="#" className="hover:text-gray-900">
-              Contact
-            </a>
-            <a href="#" className="hover:text-gray-900">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-gray-900">
-              Tourism Guide
-            </a>
+            {footerLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="hover:text-amber-600 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
-          <div className="text-sm text-gray-500">
-            © 2026 Padukuhan Petet. Preserving Heritage, Empowering Future.
+          <div className="text-sm text-gray-500 text-center md:text-right">
+            © {year} Padukuhan Petet. KKN UIMY Yogyakarta.
           </div>
         </div>
       </div>
