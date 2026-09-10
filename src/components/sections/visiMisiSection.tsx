@@ -18,9 +18,9 @@ export default function VisiMisi() {
                 Visi
               </h3>
               <blockquote className="text-2xl font-serif text-[#1e3b2b] border-l-4 border-amber-600 pl-6 italic leading-relaxed">
-                &quot;Terwujudnya Desa Petet yang Mandiri, Berbudaya, dan
-                Sejahtera melalui Pembangunan Berkelanjutan yang Bertumpu pada
-                Kearifan Lokal.&quot;
+                &quot;Terwujudnya Padukuhan Petet yang Harmonis, Mandiri, dan
+                Sejahtera melalui Pertanian dan Pariwisata Berkelanjutan yang
+                Menjunjung Tinggi Nilai Religius.&quot;
               </blockquote>
             </div>
             <div>
@@ -29,10 +29,10 @@ export default function VisiMisi() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  "Melestarikan dan mengembangkan seni, budaya, dan tradisi lokal.",
-                  "Meningkatkan kualitas sumber daya manusia melalui pendidikan dan kesehatan.",
-                  "Mendorong pertumbuhan ekonomi kerakyatan berbasis potensi desa dan UMKM.",
-                  "Membangun infrastruktur yang mendukung konektivitas dan kesejahteraan warga.",
+                  "Menjaga keharmonisan dan sinergi antarwarga sebagai kunci utama keberlanjutan desa.",
+                  "Meningkatkan kesejahteraan ekonomi warga melalui sektor pertanian sawah dan tegalan yang produktif.",
+                  "Mengembangkan potensi wisata alam Sungai Tinalah secara berkelanjutan dengan konsep yang ramah muslim.",
+                  "Melestarikan nilai-nilai gotong royong dan menjaga kelestarian lingkungan alam sekitar.",
                 ].map((misi, i) => (
                   <li key={i} className="flex items-start">
                     <CheckCircle2 className="w-6 h-6 text-amber-600 mr-3 shrink-0 mt-0.5" />
@@ -52,21 +52,26 @@ export default function VisiMisi() {
             </h3>
             <div className="space-y-6 relative z-10">
               <div>
-                <h4 className="font-bold text-gray-900">Gotong Royong</h4>
+                <h4 className="font-bold text-gray-900">
+                  Keharmonisan & Sinergi
+                </h4>
                 <p className="text-sm text-gray-600">
-                  Kerjasama kolektif untuk tujuan bersama.
+                  Menjaga kerukunan dan kerja sama kolektif antarwarga sebagai
+                  pondasi keberlanjutan.
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-gray-900">Harmoni Alam</h4>
+                <h4 className="font-bold text-gray-900">Agamis & Berbudaya</h4>
                 <p className="text-sm text-gray-600">
-                  Menjaga keseimbangan dengan lingkungan hidup.
+                  Mengedepankan nilai-nilai religius dalam kehidupan sehari-hari
+                  masyarakat.
                 </p>
               </div>
               <div>
-                <h4 className="font-bold text-gray-900">Inovasi Tradisi</h4>
+                <h4 className="font-bold text-gray-900">Kelestarian Alam</h4>
                 <p className="text-sm text-gray-600">
-                  Mengadaptasi budaya untuk masa depan tanpa kehilangan akar.
+                  Menjaga keseimbangan pemanfaatan kekayaan alam untuk pertanian
+                  dan pariwisata.
                 </p>
               </div>
             </div>

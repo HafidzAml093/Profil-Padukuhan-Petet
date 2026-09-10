@@ -5,18 +5,18 @@ export default function IdentitasDesaSection() {
     <section id="identitas" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <span className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3 block">
-          Profil Desa
+          Profil Padukuhan
         </span>
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1e3b2b] mb-4">
-          Identitas Desa
+          Identitas Padukuhan Petet
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-          Desa Petet, sebuah permata tersembunyi yang terletak di Kabupaten{" "}
-          [Nama Kabupaten], menyajikan pesona alam yang asri dipadukan dengan
+          Padukuhan Petet, sebuah permata tersembunyi yang terletak di Kabupaten
+          Kulon Progo, menyajikan pesona alam yang asri dipadukan dengan
           kearifan lokal yang masih terjaga erat.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {identitasDesa.map((item, idx) => (
             <div
               key={idx}

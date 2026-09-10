@@ -6,18 +6,32 @@ import { FaInstagram, FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#", label: "History" },
-  { href: "#", label: "Culture" },
+  { href: "#sejarah", label: "History" },
+  { href: "#culture", label: "Culture" },
   { href: "#umkm-petet", label: "UMKM" },
   { href: "#peta-umkm", label: "Map" },
   { href: "#komunitas", label: "Komunitas" },
+  { href: "#kontak", label: "Contact" },
+  { href: "#galeri", label: "Gallery" },
 ];
 
 const socials = [
-  { href: "https://instagram.com/...", icon: FaInstagram, label: "Instagram" },
-  { href: "https://wa.me/62...", icon: FaWhatsapp, label: "WhatsApp" },
-  { href: "https://facebook.com/...", icon: FaFacebook, label: "Facebook" },
-  { href: "https://tiktok.com/...", icon: FaTiktok, label: "TikTok" },
+  {
+    href: "https://www.instagram.com/padukuhanpetet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
+    icon: FaInstagram,
+    label: "Instagram",
+  },
+  { href: "https://wa.me/6287812508670", icon: FaWhatsapp, label: "WhatsApp" },
+  {
+    href: "https://web.facebook.com/hidayahstore7",
+    icon: FaFacebook,
+    label: "Facebook",
+  },
+  {
+    href: "https://www.tiktok.com/@kt_tunasharapanpetet?is_from_webapp=1&sender_device=pc",
+    icon: FaTiktok,
+    label: "TikTok",
+  },
 ];
 
 export default function Navbar() {

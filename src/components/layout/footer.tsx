@@ -3,19 +3,21 @@ import { FaInstagram, FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
 
 const socials = [
   {
-    href: "https://www.instagram.com/hafeedz_aml/#",
+    href: "https://www.instagram.com/padukuhanpetet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
     icon: FaInstagram,
     label: "Instagram",
   },
-  { href: "https://wa.me/62...", icon: FaWhatsapp, label: "WhatsApp" },
-  { href: "https://facebook.com/...", icon: FaFacebook, label: "Facebook" },
-  { href: "https://tiktok.com/...", icon: FaTiktok, label: "TikTok" },
-];
-
-const footerLinks = [
-  { href: "#", label: "Contact" },
-  { href: "#", label: "Privacy Policy" },
-  { href: "#", label: "Tourism Guide" },
+  { href: "https://wa.me/6287812508670", icon: FaWhatsapp, label: "WhatsApp" },
+  {
+    href: "https://web.facebook.com/hidayahstore7",
+    icon: FaFacebook,
+    label: "Facebook",
+  },
+  {
+    href: "https://www.tiktok.com/@kt_tunasharapanpetet?is_from_webapp=1&sender_device=pc",
+    icon: FaTiktok,
+    label: "TikTok",
+  },
 ];
 
 export default function Footer() {
@@ -57,17 +59,6 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-300 gap-4">
           <div className="font-serif text-xl font-bold text-[#1e3b2b]">
             Padukuhan Petet
-          </div>
-          <div className="flex gap-6 text-sm text-gray-500">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="hover:text-amber-600 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
           </div>
           <div className="text-sm text-gray-500 text-center md:text-right">
             © {year} Padukuhan Petet. KKN UIMY Yogyakarta.

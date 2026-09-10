@@ -12,6 +12,7 @@ import Footer from "@/components/layout/footer";
 import KomunitasSection from "@/components/sections/komunitasSection";
 import JelajahiDesa from "@/components/sections/jelajahiSection";
 import AgendaDesa from "@/components/sections/agendaKegiatanSection";
+import GaleriDesa from "@/components/sections/galeri";
 export default function DesaProfile() {
   return (
     <div className="min-h-screen bg-[#F7F7F2] text-gray-800 font-sans">
@@ -42,6 +43,7 @@ export default function DesaProfile() {
       <PetaDesa />
       {/* 15. SEBELUM BERKUNJUNG */}
       {/* 16. HUBUNGI PENGELOLA */}
+      <GaleriDesa />
       <KontakPengelola />
       {/* 17. FOOTER */}
       <Footer />

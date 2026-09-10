@@ -3,10 +3,26 @@ import { FaInstagram, FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 
 const socials = [
-  { href: "https://instagram.com/...", icon: FaInstagram, label: "Instagram" },
-  { href: "https://wa.me/62...", icon: FaWhatsapp, label: "WhatsApp" },
-  { href: "https://facebook.com/...", icon: FaFacebook, label: "Facebook" },
-  { href: "https://tiktok.com/...", icon: FaTiktok, label: "TikTok" },
+  {
+    href: "https://www.instagram.com/padukuhanpetet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
+    icon: FaInstagram,
+    label: "Instagram",
+  },
+  {
+    href: "https://wa.me/6287812508670",
+    icon: FaWhatsapp,
+    label: "WhatsApp",
+  },
+  {
+    href: "https://web.facebook.com/hidayahstore7",
+    icon: FaFacebook,
+    label: "Facebook",
+  },
+  {
+    href: "https://www.tiktok.com/@kt_tunasharapanpetet?is_from_webapp=1&sender_device=pc",
+    icon: FaTiktok,
+    label: "TikTok",
+  },
 ];
 
 export default function KontakPengelola() {
@@ -17,7 +33,7 @@ export default function KontakPengelola() {
           Layanan Masyarakat
         </span>
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1e3b2b] mb-4">
-          Hubungi Pengelola Desa
+          Hubungi Pengelola Padukuhan
         </h2>
         <p className="text-gray-600">
           Informasi lebih lanjut mengenai kunjungan wisata, kerjasama, atau
@@ -34,9 +50,9 @@ export default function KontakPengelola() {
             <div className="flex gap-4 items-start">
               <MapPin className="w-5 h-5 shrink-0 text-amber-600" />
               <p>
-                Jl. Utama Desa Petet No. 1, Kec. [Nama Kecamatan],
+                Jl. Pangaji km 7, Komplek Kantor Kalurahan Ngargosari
                 <br />
-                Kab. [Nama Kabupaten]
+                Samigaluh, Kulon Progo
               </p>
             </div>
             <div className="flex gap-4 items-center">
@@ -79,10 +95,10 @@ export default function KontakPengelola() {
               </div>
               <div>
                 <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">
-                  Informasi Wisata & Reservasi
+                  Informasi Seputar Padukuhan
                 </p>
                 <p className="font-bold text-gray-900">
-                  +62 811 2233 4455 (Budi)
+                  +62 878-1250-8670 (Bpk. Syarif Hidayat)
                 </p>
               </div>
             </div>
@@ -92,9 +108,11 @@ export default function KontakPengelola() {
               </div>
               <div>
                 <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">
-                  Puskesmas / Darurat
+                  Jogoboyo Padukuhan
                 </p>
-                <p className="font-bold text-gray-900">+62 822 3344 5566</p>
+                <p className="font-bold text-gray-900">
+                  +62 821 3772 7937(Bpk. Khusnul Anwari)
+                </p>
               </div>
             </div>
           </div>

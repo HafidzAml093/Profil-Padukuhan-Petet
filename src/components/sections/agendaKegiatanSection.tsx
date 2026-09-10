@@ -1,63 +1,98 @@
-import { agendaKegiatan } from "@/data";
-import Image from "next/image";
+"use client";
 
-export default function agendaDesa() {
+import Image from "next/image";
+import { useState, useEffect } from "react";
+
+const budayaData = [
+  {
+    title: "Merti Padukuhan",
+    desc: "Rasa syukur warga atas kelimpahan bumi dan keselamatan dusun.",
+    fotos: [
+      "/images/budaya/merti-padukuhan-1.JPG",
+      "/images/budaya/merti-padukuhan-2.JPG",
+      "/images/budaya/merti-padukuhan-3.JPG",
+      "/images/budaya/merti-padukuhan-4.JPG",
+      "/images/budaya/merti-padukuhan-5.JPG",
+      "/images/budaya/merti-padukuhan-6.JPG",
+    ],
+  },
+  {
+    title: "Bangilun",
+    desc: "Kesenian tradisional yang diwariskan turun-temurun.",
+    fotos: [
+      "/images/budaya/bangilun-1.JPG",
+      "/images/budaya/bangilun-2.JPG",
+      "/images/budaya/bangilun-3.JPG",
+      "/images/budaya/bangilun-4.JPG",
+      "/images/budaya/bangilun-5.JPG",
+    ],
+  },
+];
+
+function BudayaCard({
+  title,
+  desc,
+  fotos,
+}: {
+  title: string;
+  desc: string;
+  fotos: string[];
+}) {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % fotos.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [fotos.length]);
+
   return (
-    <section className="py-16 px-4 bg-white">
+    <div className="relative rounded-3xl overflow-hidden h-80 group">
+      {fotos.map((src, index) => (
+        <Image
+          key={src}
+          src={src}
+          alt={title}
+          fill
+          className={`object-cover transition-opacity duration-1000 ease-in-out group-hover:scale-105 ${
+            index === activeIndex ? "opacity-100" : "opacity-0"
+          }`}
+          priority={index === 0}
+        />
+      ))}
+
+      <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-white">
+        <h3 className="text-2xl font-bold mb-2">{title}</h3>
+        <p className="text-gray-200">{desc}</p>
+      </div>
+
+      <div className="absolute top-4 right-4 flex gap-1.5 z-10">
+        {fotos.map((_, index) => (
+          <span
+            key={index}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              index === activeIndex ? "w-5 bg-white" : "w-1.5 bg-white/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function KehidupanBudaya() {
+  return (
+    <section id="culture" className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-2xl font-serif mb-12">
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1e3b2b] mb-4 text-center">
           Kehidupan Budaya
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="relative rounded-3xl overflow-hidden h-80 group">
-            <Image
-              src="https://images.unsplash.com/photo-1590059530514-ce096b797b5e?auto=format&fit=crop&q=80"
-              alt="Upacara"
-              fill
-              className="object-cover transition duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-white">
-              <h3 className="text-2xl font-bold mb-2">Upacara Panen</h3>
-              <p className="text-gray-200">Rasa syukur atas kelimpahan bumi.</p>
-            </div>
-          </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 group">
-            <Image
-              src="https://images.unsplash.com/photo-1605382685714-c11929d2153f?auto=format&fit=crop&q=80"
-              alt="Seni Ukir"
-              fill
-              className="object-cover transition duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-white">
-              <h3 className="text-2xl font-bold mb-2">Seni Ukir</h3>
-              <p className="text-gray-200">Keterampilan yang diwariskan.</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 className="text-center text-xl font-serif mb-8 text-gray-500">
-          Agenda Kegiatan
-        </h3>
-        <div className="grid md:grid-cols-2 gap-6">
-          {agendaKegiatan.map((agenda, idx) => (
-            <div
-              key={idx}
-              className="flex gap-6 bg-[#F7F7F2] p-6 rounded-2xl items-center"
-            >
-              <div className="bg-[#E5AA70] text-white p-4 rounded-xl text-center min-w-20">
-                <div className="text-2xl font-bold leading-none">
-                  {agenda.date.split(" ")[0]}
-                </div>
-                <div className="text-xs uppercase mt-1">
-                  {agenda.date.split(" ")[1]}
-                </div>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 mb-1">{agenda.title}</h4>
-                <p className="text-sm text-gray-600">{agenda.desc}</p>
-              </div>
-            </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {budayaData.map((budaya) => (
+            <BudayaCard key={budaya.title} {...budaya} />
           ))}
         </div>
       </div>

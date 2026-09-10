@@ -23,14 +23,14 @@ export default function DemografiPetet() {
             </div>
             <h4 className="font-bold text-gray-900 mb-3">Populasi</h4>
             <div className="text-3xl font-serif font-bold text-[#1e3b2b] mb-1">
-              3.450{" "}
+              300-400{" "}
               <span className="text-sm font-sans font-normal text-gray-500">
                 Jiwa
               </span>
             </div>
             <div className="flex justify-between text-xs text-gray-500 mt-4 pt-4 border-t border-gray-100">
-              <span>Laki-laki: 1.700</span>
-              <span>Perempuan: 1.750</span>
+              <span>Laki-laki: 150-200</span>
+              <span>Perempuan: 150-200</span>
             </div>
           </div>
 
@@ -69,14 +69,14 @@ export default function DemografiPetet() {
             <div className="space-y-3 text-sm text-gray-600">
               <div className="flex justify-between">
                 <span>PAUD / TK</span>
-                <span className="font-bold text-gray-900">3 Unit</span>
+                <span className="font-bold text-gray-900">1 Unit</span>
               </div>
               <div className="flex justify-between">
                 <span>Sekolah Dasar</span>
-                <span className="font-bold text-gray-900">2 Unit</span>
+                <span className="font-bold text-gray-900">1 Unit</span>
               </div>
               <div className="flex justify-between">
-                <span>Pusat Belajar Komunitas</span>
+                <span>TPA</span>
                 <span className="font-bold text-gray-900">1 Unit</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function DemografiPetet() {
                 <span className="font-bold text-gray-900">85%</span>
               </div>
               <div className="flex justify-between">
-                <span>Puskesmas Pembantu</span>
+                <span>Posyandu Padukuhan</span>
                 <span className="font-bold text-gray-900">1 Unit</span>
               </div>
               <div className="flex justify-between">

@@ -16,10 +16,9 @@ import {
 } from "lucide-react";
 
 export const identitasDesa = [
-  { label: "Luas Wilayah", value: "1.250 Ha" },
-  { label: "Padukuhan", value: "5" },
-  { label: "Rukun Warga (RW)", value: "12" },
-  { label: "Rukun Tetangga (RT)", value: "36" },
+  { label: "Luas Wilayah", value: "77 Ha" },
+  { label: "Rukun Warga (RW)", value: "2" },
+  { label: "Rukun Tetangga (RT)", value: "4" },
 ];
 
 export const statusMandiri = [
@@ -50,29 +49,6 @@ export const statusMandiri = [
     icon: Users,
     color: "text-rose-700",
     bg: "bg-rose-100",
-  },
-];
-
-export const agendaKegiatan = [
-  {
-    date: "15 AGU",
-    title: "Festival Budaya Desa",
-    desc: "Pertunjukan seni tari, wayang kulit, dan pasar rakyat.",
-  },
-  {
-    date: "22 SEP",
-    title: "Pelatihan UMKM",
-    desc: "Workshop pengemasan produk dan pemasaran digital untuk warga.",
-  },
-  {
-    date: "05 OKT",
-    title: "Rembuk Warga",
-    desc: "Pertemuan bulanan membahas rencana pembangunan desa.",
-  },
-  {
-    date: "10 NOV",
-    title: "Gotong Royong Bersih Desa",
-    desc: "Kegiatan rutin membersihkan lingkungan dan fasilitas umum.",
   },
 ];
 
@@ -111,10 +87,10 @@ export const dataJendelaUMKM = [
       "Kemurnian dari Padukuhan Petet. Gula aren tradisional yang diolah 100% secara manual tanpa campuran bahan kimia. Memiliki warna alami kecokelatan dengan tekstur empuk dan aroma karamel yang mendalam hasil dari pemanasan tungku kayu bakar.",
     location: "Padukuhan Petet RT 20, Kapanewon Samigaluh, Kulon Progo",
     hours: "Senin - Sabtu (Buka setiap hari pasaran)",
-    contact: "Bapak Rukimin (Bisa via WhatsApp)",
+    contact: "083111702350",
     price: "Gula Aren Cetak: Rp 25.000 / kilogram (Kapasitas maks 2kg/hari)",
-    mainImage: "/images/umkm/gula-aren/main.jpg",
-    gallery: ["/images/umkm/gula-aren/1.jpg", "/images/umkm/gula-aren/2.jpg"],
+    mainImage: "/images/umkm/gula-aren/main.png",
+    gallery: ["/images/umkm/gula-aren/1.jpeg", "/images/umkm/gula-aren/2.jpg"],
   },
   {
     id: "geblek-toyo",
@@ -127,7 +103,7 @@ export const dataJendelaUMKM = [
       "Dirintis oleh Mbah Ngatiyem, usaha keluarga ini mempertahankan keaslian rasa menggunakan teknik khusus perpaduan ampas dan pati singkong lokal. Menghasilkan tekstur geblek yang renyah di luar, kenyal di dalam, dan tidak cepat keras meski disimpan.",
     location: "Dusun Petet, Yogyakarta, Indonesia",
     hours: "Tersedia Eceran & Partai Besar (Sistem Made to Order)",
-    contact: "WhatsApp Geblek Mas Toyo",
+    contact: "085740982218",
     price: "Mulai dari Rp 1.000 / 3 buah",
     mainImage: "/images/umkm/geblek/main.jpg",
     gallery: ["/images/umkm/geblek/1.jpg", "/images/umkm/geblek/2.jpg"],
@@ -143,9 +119,9 @@ export const dataJendelaUMKM = [
       "Dedikasi puluhan tahun Mbah Nuryadi dalam melestarikan seni kriya bambu tradisional dengan ketelitian tangan murni (100% Handmade). Menghasilkan anyaman berkualitas turun-temurun yang adaptif dengan harga yang merakyat.",
     location: "Padukuhan Petet, Kulon Progo",
     hours: "Senin - Minggu",
-    contact: "Bapak Nuryadi (Pemesanan via WhatsApp)",
+    contact: "083821995681",
     price: "Bervariasi tergantung jenis dan ukuran anyaman",
-    mainImage: "/images/umkm/bambu/main.jpg",
+    mainImage: "/images/umkm/bambu/main.jpeg",
     gallery: ["/images/umkm/bambu/1.jpg", "/images/umkm/bambu/2.jpg"],
   },
   {
@@ -161,8 +137,8 @@ export const dataJendelaUMKM = [
     hours: "Setiap Hari (Produksi Pagi Hari)",
     contact: "0838-5322-3954",
     price: "Harga grosir dan eceran menyesuaikan ukuran",
-    mainImage: "/images/umkm/tempe/main.jpg",
-    gallery: ["/images/umkm/tempe/1.jpg", "/images/umkm/tempe/2.jpg"],
+    mainImage: "/images/umkm/tempe/main.jpeg",
+    gallery: ["/images/umkm/tempe/1.jpeg", "/images/umkm/tempe/2.jpg"],
   },
 ];
 
