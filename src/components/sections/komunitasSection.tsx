@@ -6,7 +6,7 @@ export default function KomunitasSection() {
     <section id="komunitas" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <span className="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3 block text-center">
-          Kelembagaan Desa
+          Kelembagaan Padukuhan
         </span>
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#1e3b2b] mb-4 text-center">
           Komunitas Padukuhan Petet
